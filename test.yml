@@ -169,6 +169,9 @@ Resources:
       SecurityGroupIds:
         - !Ref EC2SecurityGroup
       SubnetId: !Ref PrivateSubnet1
+      Tags:
+        - Key: Name
+          Value: index
       UserData:
         Fn::Base64: !Sub |
           #!/bin/bash
@@ -240,6 +243,9 @@ Resources:
       SecurityGroupIds:
         - !Ref EC2SecurityGroup
       SubnetId: !Ref PrivateSubnet1
+      Tags:
+        - Key: Name
+          Value: blue
       UserData:
         Fn::Base64: !Sub |
           #!/bin/bash
