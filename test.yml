@@ -324,6 +324,7 @@ Resources:
       HealthCheckIntervalSeconds: 30
       HealthCheckProtocol: HTTP
       HealthCheckTimeoutSeconds: 15
+      HealthCheckPath: /blue.html
       HealthyThresholdCount: 5
       Matcher:
         HttpCode: '200'
